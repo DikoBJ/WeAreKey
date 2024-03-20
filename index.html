@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeAreKey</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="home">
+        <img id="main-image" src="pics/main.jpg">
+        <nav class="nav-bar-content">
+            <h1 class="logo">EL <br>IO</h1>
+
+            <div class="nav-bar">
+                <a href="#about">
+                    <p class="paragraph-style">About</p>
+                </a>
+                <a href="#facilities">
+                    <p class="paragraph-style">Facilities</p>
+                </a>
+                <a href="#rooms">
+                    <p class="paragraph-style">Rooms</p>
+                </a>
+                <a href="#contacts">
+                    <p class="paragraph-style">Contacts</p>
+                </a>
+
+                <div class="icons">
+                    <a href="mailto:elio.hotel@gmail.com">
+                        <img href="" src="pics/email.png" alt=""></a>
+                    <a href="https://wa.me/0207773018">
+                        <img src="pics/phone.png" alt=""></a>
+                    <a href="#contacts">
+                        <img src="pics/address.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <h2 class="header-style">Discover <br> Unforgettable <br> Luxury<span class="line"></span></h2>
+    </div>
+
+
+    <div class="sticky-booking">
+        <div class="trip-dates">
+            <p class="paragraph-style"><span class="line"></span> Choose Dates: <span
+                    id="start-date"></span> - <span id="end-date"> </span>
+            <div class="header-style">2 days trip</div>
+            </p>
+            <button data-modal-target="#modal" class="book-now">Book Now</button>
+        </div>
+    </div>
+
+
+    <div class="placeholder"></div>
+    </div>
+
+
+    <div id="about" class="about">
+        <img id="about-image" src="pics/about.jpg">
+        <div class="about-info">
+            <h3 class="header-style">ABOUT<br>US</h3>
+            <div class="about-block">
+                <p class="paragraph-style">Hotel Elio emerged from the visionary dream of Elias "Elio" Rodriguez, a
+                    passionate hotelier with a deep appreciation for luxury and hospitality. Inspired by his travels and
+                    a desire to create a unique haven, Elio meticulously planned and designed the hotel to blend
+                    classical elegance with contemporary comfort.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="facilities" class="facilities">
+        <h3 class="header-style">FACILITIES</h3>
+        <div class="facilities-grid">
+            <p class="paragraph-style">Nestled amidst historic streets and vibrant culture,
+                our boutique hotel boasts a
+                unique blend of modern luxury and timeless elegance. From beautifully appointed rooms and suites to
+                personalized amenities and thoughtful touches, Hotel Elio Sma Amenity is the perfect choice for
+                discerning
+                travelers seeking comfort, convenience, and sophistication.</p>
+                
+            <div class="spa-image-text">
+                <img src="pics/spa.jpg" alt="" srcset=""><span class="line"></span></img>
+                <h3 class="paragraph-style">S<br>P<br>A </h3>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="rooms" class="rooms">
+        <h3 class="header-style">ROOMS</h3>
+        <div class="block-rooms">
+            <div class="bungalow">
+                <h4 class="paragraph-style"><span class="line"></span> B <br> U<br> N<br> G<br> A<br> L<br> O<br> W</h4>
+                <img id="bungalow-image" src="pics/bungalow.jpg" alt="" srcset="">
+
+                <div class="wrapper">
+                    <p class="paragraph-style"> In the Bungalow at Hotel Elio Sma Amenity, guests can enjoy exclusive
+                        amenities such as a private garden or terrace, offering a secluded outdoor space to relax and
+                        unwind. This unique accommodation option provides a sense of privacy and tranquility, allowing
+                        guests to escape the hustle.</p>
+                    <button data-modal-target="#modal" type="button">Book</button>
+                </div>
+
+                <div class="modal" id="modal">
+                    <div class="modal-header">
+                        <div class="header-style">Bungalow</div>
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+                    <div class="carousel">
+                        <div class="carousel-inner">
+                            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true"
+                                hidden="" checked="checked">
+                            <div class="carousel-item">
+                                <img src="pics/classic.jpg">
+                            </div>
+                            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true"
+                                hidden="">
+                            <div class="carousel-item">
+                                <img src="pics/bungalow2.jpg">
+                            </div>
+                            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true"
+                                hidden="">
+                            <div class="carousel-item">
+                                <img src="pics/bungalow3.jpeg">
+                            </div>
+                            <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+                            <label for="carousel-2" class="carousel-control next control-1">›</label>
+                            <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+                            <label for="carousel-3" class="carousel-control next control-2">›</label>
+                            <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                            <label for="carousel-1" class="carousel-control next control-3">›</label>
+                            <ol class="carousel-indicators">
+                                <li>
+                                    <label for="carousel-1" class="carousel-bullet">•</label>
+                                </li>
+                                <li>
+                                    <label for="carousel-2" class="carousel-bullet">•</label>
+                                </li>
+                                <li>
+                                    <label for="carousel-3" class="carousel-bullet">•</label>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <h2 class="header-style">Information</h2>
+                    <div class="info-description">
+                        <div class="paragraph-style"><span class="line"></span>
+                            Escape to a completely renovated bungalow nestled along the picturesque coastline of La
+                            Panne.
+                            With its breathtaking panoramic views of the sea, this tranquil retreat offers an
+                            unforgettable
+                            escape from the hustle and bustle of everyday life. Just steps away from the bustling town
+                            center and pristine sand dunes, the bungalow provides the perfect blend of convenience and
+                            serenity.
+                        </div>
+                        <div class="paragraph-style">
+                            <li>Wifi</li>
+                            <li>Sea view</li>
+                            <li>Dedicated workspace</li>
+                            <li>Beach access – Beachfront</li>
+                        </div>
+                    </div>
+
+                    <div class="calendars">
+                        <h3 class="paragraph-style">Arrival</h3>
+                        <input type="date">
+                        <h3 class="paragraph-style">Departure</h3>
+                        <input type="date">
+
+                    </div>
+                    <button class="submit" type="button">Book</button>
+                </div>
+
+                <div id="overlay"></div>
+            </div>
+            <div class="villa">
+
+                <h4 class="paragraph-style"> V<br>I<br>L<br>L<br>A<span class="line"></span></h4>
+                <img id="villa-image" src="pics/villa.jpg" alt="" srcset="">
+                <div class="wrapper">
+                    <p class="paragraph-style">Guests can enjoy spacious living areas, elegant furnishings, and private
+                        outdoor spaces with stunning views. The villa provides a serene escape with upscale comforts and
+                        personalized service for an unforgettable stay.</p>
+
+                    <button type="button">Book</button>
+
+                </div>
+            </div>
+            <div class="classic">
+                <h4 class="paragraph-style"><span class="line"></span> C<br>L<br>A<br>S<br>S<br>I<br>C</h4>
+                <img id="classic-image" src="pics/classic.jpg" alt="" srcset="">
+                <div class="wrapper">
+                    <p class="paragraph-style"> Featuring modern amenities and stylish décor, these rooms provide a cozy
+                        space to relax after a day of exploring the city. With plush bedding, a well-appointed en-suite
+                        bathroom, and thoughtful touches throughout, the Classic room ensures a pleasant stay for
+                        travelers seeking comfort and convenience.</p>
+                    <button type="button">Book</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contacts" class="contacts">
+        <h3 class="header-style">CONTACTS</h3>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h5 class="header-style"> Address: </h5>
+                <p class="paragraph-style"> Groen van Prinstererstraat 57, 1051 EJ Amsterdam</p>
+                <h5 class="header-style"> Email: </h5>
+                <p class="paragraph-style"> +3107773018</p>
+                <h5 class="header-style"> Number: </h5>
+                <p class="paragraph-style"> Elio.hotel@gmail.com</p>
+            </div>
+
+            <div class="map">
+                <iframe width="700" height="450" frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?q=Groen%20van%20Prinstererstraat%2057,%201051%20EJ%20Amsterdam&key=AIzaSyCljuahtb7mvYvRMqpVpu7tAx_B7MJUY40"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p class="paragraph-style"> Amsterdam, Netherlands 2024</p>
+    </div>
+
+
+    <script defer src="main.js"></script>
+</body>
+</html>
